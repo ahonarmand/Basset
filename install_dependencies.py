@@ -58,7 +58,7 @@ def main():
 
     os.chdir('torch-hdf5')
 
-    cmd = 'luarocks make'
+    cmd = 'luarocks --local --deps-mode=all make'
     subprocess.call(cmd, shell=True)
 
     os.chdir('..')
