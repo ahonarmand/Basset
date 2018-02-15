@@ -30,19 +30,19 @@ def main():
     ############################################################
 
     # install luafilesystem
-    cmd = 'luarocks install luafilesystem'
+    cmd = 'luarocks install --local --deps-mode=all luafilesystem'
     subprocess.call(cmd, shell=True)
 
     # install dpnn
-    cmd = 'luarocks install dpnn'
+    cmd = 'luarocks install --local --deps-mode=all dpnn'
     subprocess.call(cmd, shell=True)
 
     # install inn
-    cmd = 'luarocks install inn'
+    cmd = 'luarocks install --local --deps-mode=all inn'
     subprocess.call(cmd, shell=True)
 
     # install dp
-    cmd = 'luarocks install dp'
+    cmd = 'luarocks install --local --deps-mode=all dp'
     subprocess.call(cmd, shell=True)
 
 
